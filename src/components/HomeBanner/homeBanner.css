@@ -1,0 +1,24 @@
+.homeBanner{
+    background: url('https://i.ibb.co/BPZFRSh/banner.jpg') no-repeat center;  
+    background-size: cover;   
+     
+}
+.hero-text{
+    margin-top: 40%;
+    color:#fff;
+    margin-left: 30px;
+    overflow-x: auto;
+}
+.fIcon{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(243, 10, 10);
+    color:#fff;
+    line-height: 40px;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 20px;
+}
+.topTitle{
+    font-size: 55px;
+}

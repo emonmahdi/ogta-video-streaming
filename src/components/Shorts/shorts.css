@@ -1,0 +1,45 @@
+.shorts{
+    padding-top: 60px;  
+    color:#fff; 
+    margin: 0;
+    width: 100%;
+    padding-left: 30px;
+    overflow: hidden;
+}
+.subTitle{
+    margin-bottom: 30px;
+}
+.shortsIcon{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    background-color: #8A2BE2;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    margin-right: 10px;
+}
+.singleItem{
+     overflow: hidden; 
+}
+.slick-slide > div {
+    margin: 0 10px;
+}
+.slick-list {
+    margin: 0 -10px;
+}
+.slick-next{
+    padding-right: 30px;
+    margin-right: 50px;
+    top: 46%; 
+}
+.slick-prev{ 
+    top: 46%; 
+    margin-left: 50px;
+}
+.slick-arrow{
+    font-size: 70px;
+}

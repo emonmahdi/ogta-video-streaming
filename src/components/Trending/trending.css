@@ -1,0 +1,37 @@
+.trending{
+    padding-top: 60px;  
+    color:#fff; 
+    margin: 0;
+    width: 100%;
+    padding-left: 30px;
+}
+.subTitle{
+    margin-bottom: 30px;
+}
+.subTitleIcon{
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    background-color: #2196F3;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    margin-right: 7px;
+    font-weight: bold;
+}
+.singleItem{
+     overflow: hidden; 
+}
+/* TrendingRoute */
+.trendingRoute{
+    width: calc(100% - 250px);
+    left: 250px;
+    top: 70px; 
+    position: relative;
+    height: auto;
+    background-color:  #191C1D;
+    color:#fff;
+}

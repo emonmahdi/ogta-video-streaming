@@ -1,0 +1,67 @@
+[
+    {
+        "id": 1,
+        "title": "this is title one",
+        "img":"https://i.ibb.co/gZLXmFh/blog-1.jpg",
+        "author": "Dan Summy",
+        "views": "1000",
+        "hour": "10 hour"
+    },
+    {
+        "id": 2,
+        "title": "this is title two",
+        "img":"https://i.ibb.co/CwyN2y2/tranding-1.jpg",
+        "author": "Dan Samndany",
+        "views": "1000",
+        "hour": "10 hour"
+    },
+    {
+        "id": 3,
+        "title": "this is title three",
+        "img":"https://i.ibb.co/qWm4McF/video-1.jpg",
+        "author": "Dan affcv",
+        "views": "1000",
+        "hour": "10 hour"
+    },
+    {
+        "id": 4,
+        "title": "this is title four",
+        "img":"https://i.ibb.co/gScLKDV/video-2.jpg",
+        "author": "Dan Racsdi",
+        "views": "1000",
+        "hour": "10 hour"
+    },
+    {
+        "id": 5,
+        "title": "this is title four",
+        "img":"https://i.ibb.co/gScLKDV/video-2.jpg",
+        "author": "Dan Racsdi",
+        "views": "1000",
+        "hour": "10 hour"
+    },
+    {
+        "id": 6,
+        "title": "this is title four",
+        "img":"https://i.ibb.co/gScLKDV/video-2.jpg",
+        "author": "Dan Racsdi",
+        "views": "1000",
+        "hour": "10 hour"
+    },
+    {
+        "id": 7,
+        "title": "this is title four",
+        "img":"https://i.ibb.co/gScLKDV/video-2.jpg",
+        "author": "Dan Racsdi",
+        "views": "1000",
+        "hour": "10 hour"
+    },
+    {
+        "id": 8,
+        "title": "this is title Five",
+        "img":"https://i.ibb.co/z2Q7c1q/article-2.jpg",
+        "author": "Dan Racsdi",
+        "views": "1000",
+        "hour": "10 hour"
+    }
+   
+] 

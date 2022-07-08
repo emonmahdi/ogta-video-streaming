@@ -1,0 +1,74 @@
+.articles{
+    padding-top: 60px;  
+    color:#fff; 
+    margin: 0; 
+    padding-left: 30px;  
+
+}
+/* ArticleRoute Css */
+.sidebarContentArticle{
+    display: flex;
+    width: 100%;
+} 
+.subTitle{
+    margin-bottom: 30px;
+    padding-top: 20px;
+    color:#fff;
+}
+.articlesIcon{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    background-color: #8A2BE2;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    margin-right: 10px;
+} 
+.articles .singleItem{
+    background-color: #303233;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    height: 400px;
+}
+.single-content h4{
+    margin: 15px 0;
+}
+.authImg{
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+
+}
+.articleBtn{
+    font-size: 11px;
+    padding: 5px 8px ;
+    background-color: #000;
+    color:#fff;
+    border: none;
+    outline:none;
+    margin-left: 10px;
+}
+
+/* ArticleRoute */
+.articleRoute{
+    width: calc(100% - 250px);
+    left: 250px;
+    top: 70px; 
+    position: relative;
+    height: auto;
+    background-color:  #191C1D;
+}
+.articleRoute .singleItem{
+    background-color: #303233;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    height: 400px;
+    color:#fff;
+}

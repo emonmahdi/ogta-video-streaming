@@ -1,0 +1,18 @@
+.home{
+    /* background-color: #191C1D;  */
+     
+}
+ 
+.sidebarAndContent{ 
+     width: 100%;
+     display: flex;
+}
+
+.contentContainer{   
+    width: calc(100% - 250px);
+    left: 250px;
+    top: 70px; 
+    position: relative;
+    height: auto;
+    background-color:  #191C1D;
+}

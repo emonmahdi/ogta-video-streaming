@@ -1,0 +1,38 @@
+.latestVideo{
+    padding-top: 60px;  
+    color:#fff; 
+    margin: 0;
+    /* width: 100%; */
+    padding-left: 30px;
+   
+
+     
+}
+.subTitle{
+    margin-bottom: 30px;
+}
+.latestVideoIcon{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    background-color: #8A2BE2;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    margin-right: 10px;
+}
+.latestVideoRoute .singleItem{
+     overflow: hidden; 
+     color:#fff;
+}
+.latestVideoRoute{
+    width: calc(100% - 250px);
+    left: 250px;
+    top: 70px; 
+    position: relative;
+    height: auto;
+    background-color:  #191C1D;
+}

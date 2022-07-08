@@ -1,0 +1,74 @@
+.topNav{
+    overflow: hidden;
+    width: 100%;
+}
+.ogtaNavbar{ 
+   background-image: linear-gradient(to right,  rgba(0,0,0,.9), #9303FD , #C954F7 );
+}
+.searchBar{
+    /* padding-top: 20px; */
+    width: 600px;
+}
+.menu-toggle-icon{
+   cursor: pointer;
+   color:#fff;
+}
+.menu-items{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.left-nav-item{
+   margin-right: 150px;
+   padding: 10px 0;
+}  
+.left-nav-item svg{
+   font-size: 26px;
+   margin-right: 15px;
+}
+.form-outline{
+   display: inline-block; 
+   padding: 10px;
+   overflow: hidden;
+   height: 60px; 
+   border-radius: 30px; 
+}
+.form-outline input{
+    width: 500px;  
+    height: 100%;
+    padding: 0 15px;
+    border:none;
+    outline:none;
+    background-color: #3A3B3C;
+    border-radius: 30px;
+    color:#fff;
+}
+.searchBtn{
+   border:none;
+   outline:none;
+   padding: 8px 35px;
+   margin-top: -2px;
+   margin-left: -32px;  
+   border-radius: 30px; 
+   background-color: #43C6F9; 
+   color:#fff; 
+}
+.nav-link{
+   margin: 0 12px;
+}
+.profile svg { 
+   margin-left: 5px;
+   color:#fff;
+}
+.icons span{
+    display: inline-block;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.icons span svg{ 
+   margin-right: 5px; 
+   color:#fff !important;
+   font-size: 22px;
+} 
+/* BsThreeDotsVertical    TbGridDots  */
+

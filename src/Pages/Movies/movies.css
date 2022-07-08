@@ -1,0 +1,10 @@
+.moviesRoute{
+    width: calc(100% - 250px);
+    left: 250px;
+    top: 70px; 
+    position: relative;
+    height: auto;
+    background-color:  #191C1D; 
+    padding: 20px;
+    color:#fff; 
+} 
