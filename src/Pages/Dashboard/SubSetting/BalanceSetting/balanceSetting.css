@@ -1,0 +1,30 @@
+.balanceSetting{
+    padding: 20px;
+    background-color: #303233;
+    text-align: left;
+}
+.amount{
+    font-size: 70px;
+}
+.balanceSetting label{
+    text-align: left;
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+.balanceSetting input{
+    background-color: transparent;
+    border: 1px solid #ddd;
+    color:#ddd;
+    outline: none;
+}
+.balanceSetting input:focus{
+    background-color: transparent;
+    color:#ddd;
+}
+.balanceSetting::placeholder{
+    color:#ddd;
+}
+.balanceSetting hr{
+    margin: 20px 0;
+}

@@ -1,0 +1,19 @@
+.monetizationSetting{
+    padding: 20px;
+    background-color: #303233;
+}
+.monetizationSetting label{
+    text-align: left;
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+.monetizationSetting input{
+    background-color: transparent;
+    border: 1px solid #ddd;
+    color:#ddd;
+    outline: none;
+}
+.monetizationSetting hr{
+    margin: 50px 0;
+}

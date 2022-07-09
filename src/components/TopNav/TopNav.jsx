@@ -3,12 +3,17 @@ import { BsThreeDotsVertical } from "react-icons/bs";
 import * as FaIcons from "react-icons/fa";
 import { MdVideocam } from "react-icons/md";
 import { TbGridDots } from "react-icons/tb";
-
 import { Link } from "react-router-dom";
 import logoImg from '../../Assets/img/logo3.png';
+import { AuthUser } from "../../Pages/Auth/AuthUser/AuthUser";
 import "./topnav.css";
 
 const TopNav = () => {
+
+  const {user, token, logout} = AuthUser();
+
+ 
+
   return (
     <div className="topNav"> 
       <Navbar collapseOnSelect expand="lg"  className='ogtaNavbar' fixed="top" variant="dark">
@@ -43,12 +48,12 @@ const TopNav = () => {
               </div>
             </Nav>
             <Nav className="">
-              <Nav.Link as={Link} to="/">
+              <Nav.Link  href="#">
                 <div className="createVideo icons">
-                  <span>
+                  {/* <span>
                     {" "}
                     <MdVideocam /> Create{" "} 
-                  </span>
+                  </span> */}
                   {/* <span>
                     
                      <BiMessageDots />
@@ -61,13 +66,23 @@ const TopNav = () => {
               </Nav.Link> 
               <Link to='/register' style={{textDecoration:'none',color:'#fff',marginTop:'8px', marginRight:'9px'}}>Register</Link> 
 
-              <Link to='/login' style={{textDecoration:'none',color:'#fff',marginTop:'8px'}}>Login</Link>
+              <Link to='/settings' style={{textDecoration:'none',color:'#fff',marginTop:'8px', marginRight:'6px'}}>Settings</Link> 
 
-              <Nav.Link as={Link} to="/admin-panel">
-                <div className="profile">
-                  My Accounts <FaIcons.FaUserCircle /> <BsThreeDotsVertical />
-                </div>
-              </Nav.Link>
+              {
+                !user?.email ?
+                <Link to='/login' style={{textDecoration:'none',color:'#fff',marginTop:'8px'}}>Login</Link>
+                : 
+                <>
+                <Nav.Link as={Link} to="/admin-panel"> 
+                  <div className="profile">
+                    {user?.user_name}<FaIcons.FaUserCircle /> <BsThreeDotsVertical />
+                  </div> 
+                </Nav.Link>
+                <button onClick={logout} className='btn btn-danger'>logout</button>
+                </>
+              }    
+                
+              
             </Nav>
           </Navbar.Collapse>
         </Container>

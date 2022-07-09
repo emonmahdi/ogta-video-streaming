@@ -1,0 +1,23 @@
+.profileSetting{
+    padding: 20px 40px;
+    background-color: #303233;
+}
+.profileSetting label{
+    text-align: left;
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+.profileSetting input{
+    background-color: transparent;
+    border: .5px solid #eee;
+    color:#ddd;
+    outline: none;
+}
+.profileSetting input:focus{
+    background-color: transparent;
+    color:#ddd;
+}
+.profileSetting hr{
+    margin: 50px 0;
+}

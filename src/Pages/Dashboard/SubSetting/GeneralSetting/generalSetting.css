@@ -1,0 +1,26 @@
+.generalSetting{
+    padding: 20px;
+    background-color: #303233;
+}
+.generalSetting label{
+    text-align: left;
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+.generalSetting input{
+    background-color: transparent;
+    border: 1px solid #ddd;
+    color:#ddd;
+    outline: none;
+}
+.generalSetting input:focus{
+    background-color: transparent;
+    color:#ddd;
+}
+.generalSetting::placeholder{
+    color:#ddd;
+}
+.generalSetting hr{
+    margin: 50px 0;
+}

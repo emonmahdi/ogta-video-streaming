@@ -13,7 +13,8 @@ import './home.css'
 
 const Home = () => {
   // const {user} = AuthUser();
-  // console.log(user)
+  // console.log(user?.user_name);
+  // console.log(user?.email);
   return (
     <div className='home'>  
         <div className="sidebarAndContent"> 

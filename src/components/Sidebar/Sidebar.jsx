@@ -10,7 +10,7 @@ import './sidebar.css'
 const Sidebar = () => {
     return (
         <div className='sidebar'>
-            <ul>
+            <ul> 
                 <Link to='/' style={{textDecoration: 'none', color: '#fff'}}> 
                 <li>
                     <MIcons.MdHome className='icon' />
