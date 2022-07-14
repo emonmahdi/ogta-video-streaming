@@ -36,6 +36,7 @@
     display: inline-block;
     padding: 10px 0;
     font-weight: bold;
+    font-size: 15px;
 }
 
 /* width */
@@ -58,3 +59,35 @@
   .adminSidebar::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
+
+
+.sidebar-item{
+  transition: background-color .4s;
+}
+
+.sidebar-title{
+  cursor: pointer;
+}
+.adminSidebar ul li{
+  background-color: #720ABF;
+}
+.sidebar-item.open .sidebar-title .dropdownIcon{
+  transform: rotate(180deg);
+}
+.dropdownIcon{
+  margin-left: 95px;
+  font-size: 25px;
+  transition: transform .3s;
+} 
+.sidebar-content {
+  height: 0;
+  overflow: hidden; 
+}
+.sidebar-content span{
+  display: block;
+  padding: 5px 30px;
+}
+.sidebar-item.open .sidebar-content{
+  height: auto;
+  transition: height .5s;
+}

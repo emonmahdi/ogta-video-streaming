@@ -2,7 +2,7 @@ import React from 'react';
 import * as FaIcons from "react-icons/fa";
 import * as FcIcons from "react-icons/fc";
 import { useEffect, useState } from "react";
-import   {useNavigate} from  'react-router-dom';
+import   {Link, useNavigate} from  'react-router-dom';
 import axiosInstance from '../Axios/axios';
 import jwt_decode from "jwt-decode";
 
@@ -62,6 +62,7 @@ const Login = () => {
             setUser(jwt_decode(res.data.access) );
             // console.log(jwt_decode(res.data.access, { header: true }));
             navigate('/');
+            window.location.reload();
             console.log('successful user login');
         });
 
@@ -95,7 +96,7 @@ const Login = () => {
                     </div>
                     <hr />
                     <div className='text-center'>
-                        <p>New here!  Register! </p>
+                        <p>New here! <Link to='/register'>Register!</Link>  </p>
                     </div>
                 </form>
         </div>

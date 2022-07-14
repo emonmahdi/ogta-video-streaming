@@ -5,8 +5,11 @@ import * as BiIcons from "react-icons/bi";
 import {Link} from 'react-router-dom';
 
 import './adminSidebar.css'
+import { useState } from 'react';
 
 const AdminSidebar = () => {
+    const [open, setOpen] = useState(false);
+
     return (
         <div className='adminSidebar'>
             <ul>
@@ -16,18 +19,35 @@ const AdminSidebar = () => {
                     <span>Dashboard</span> 
                 </li> 
                 </Link>
-                <Link to='/history' style={{textDecoration: 'none', color: '#fff'}}> 
-                    <li>
+
+                {/* sidebar item */}
+                <div className={open ? 'sidebar-item open' : 'sidebar-item'} style={{textDecoration: 'none', color: '#fff'}}> 
+                    <li className='sidebar-title' onClick={() => setOpen(!open)}>
                         <MIcons.MdOutlineHistory className='icon' />
                         <span>Settings</span>
+                        <MIcons.MdOutlineKeyboardArrowDown  className='dropdownIcon' />
                     </li> 
-                </Link>
-                <Link to='/purchases' style={{textDecoration: 'none', color: '#fff'}}> 
-                    <li>
+                    <div className="sidebar-content">
+                        <span>General Configuration</span>
+                        <span>Website Information</span>
+                        <span>Social Login System</span>
+                        <span>Setup Live Streaming</span>
+                    </div>
+                </div>
+                {/* sidebar item */}
+                <div className={open ? 'sidebar-item open' : 'sidebar-item'} style={{textDecoration: 'none', color: '#fff'}}> 
+                    <li className='sidebar-title' onClick={() => setOpen(!open)}>
                         <FaIcons.FaCommentDollar className='icon' />
-                        <span>Payment and Ads </span>
+                        <span>Payment and Ads</span>
+                        <MIcons.MdOutlineKeyboardArrowDown  className='dropdownIcon' />
                     </li> 
-                </Link>
+                    <div className="sidebar-content">
+                        <span>Payment Configuration</span>
+                        <span>Advertisement Settings</span>
+                        <span>Manage Bank Receipts</span>
+                        <span>Manage Video Ads</span>
+                    </div>
+                </div> 
                 <Link to='/articles' style={{textDecoration: 'none', color: '#fff'}}>
                     <li>
                         <MIcons.MdOutlineArticle className='icon' />

@@ -1,6 +1,6 @@
 import './register.css'; 
 import { useEffect, useState } from "react";
-import   {useNavigate} from  'react-router-dom';
+import   {Link, useNavigate} from  'react-router-dom';
 import axios from 'axios';
 
 const Register = () => {
@@ -32,7 +32,7 @@ const Register = () => {
                    <h2 className='mb-5 mt-3'>Sign Up! OGTA</h2>
                   
                    <div> 
-                        <input type="email" id='email' placeholder='Email' className='input' onChange={handleChange} name='email' required />
+                        <input type="email" id='email' placeholder='User Email' className='input' onChange={handleChange} name='email' required />
                     </div>
                     <div> 
                         <input type="text" id='username' placeholder='User Name' className='input' onChange={handleChange} name='user_name' required />
@@ -57,7 +57,7 @@ const Register = () => {
                     </div>
                     <hr />
                     <div className='text-center'>
-                        <p>Already have an account Login! </p>
+                        <p>Already have an account <Link to='/login'>Login! </Link> </p>
                     </div>
                 </form>
         </div>

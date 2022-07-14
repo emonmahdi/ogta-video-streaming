@@ -21,7 +21,7 @@ const Sidebar = () => {
                     <li>
                         <MIcons.MdOutlineHistory className='icon' />
                         <span>History</span>
-                    </li> 
+                    </li>  
                 </Link>
                 <Link to='/purchases' style={{textDecoration: 'none', color: '#fff'}}> 
                     <li>

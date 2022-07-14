@@ -9,14 +9,15 @@ export const AuthUser = () => {
     const navigate = useNavigate();
 
     const logout = () => {
-        localStorage.clear(); 
+        localStorage.clear();  
         navigate("/login");
+        window.location.reload();
     }
 
     const getToken = () => {
         const tokenString = localStorage.getItem('token');
         if (!tokenString) {
-            return null;
+            return;
         }
         const token = JSON.parse(tokenString);
         if (token.exp * 100000000000 < Date.now()){
@@ -28,7 +29,7 @@ export const AuthUser = () => {
     const getUser = () => {
         const userString = localStorage.getItem('access_token');
         if (!userString) {
-            return null;
+            return ;
         }
         const jwt =  jwt_decode(userString);
         if (jwt.exp * 1000000000000 < Date.now()){

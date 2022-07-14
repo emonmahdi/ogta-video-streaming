@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ArticleRoute from './components/Articles/ArticleRoute'; 
 import LatestVideoRoute from './components/LatestVideo/LatestVideoRoute';
+import Pricing from './components/Pricing/Pricing';
 import Sample from './components/Sample/Sample';
 import Sidebar from './components/Sidebar/Sidebar';
 import TopNav from './components/TopNav/TopNav';
@@ -39,6 +40,7 @@ function App() {
           <Route path='admin-panel' element={<Admin />} />  
           <Route path='form' element={<Sample />} /> 
           <Route path='settings' element={<Settings />} />  
+          <Route path='pricing' element={<Pricing />} />  
         </Routes>
       </BrowserRouter> 
     </div>

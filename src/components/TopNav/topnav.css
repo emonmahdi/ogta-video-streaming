@@ -56,6 +56,10 @@
 .nav-link{
    margin: 0 12px;
 }
+.profile{
+   cursor: pointer;
+   margin-left: 200px;
+}
 .profile svg { 
    margin-left: 5px;
    color:#fff;
@@ -72,3 +76,45 @@
 } 
 /* BsThreeDotsVertical    TbGridDots  */
 
+ 
+/* ================ */
+.modal-dialog { 
+   width: 260px;
+   margin: 0.5rem;
+   pointer-events: none;
+   margin-left: 90%;
+}
+.modal-backdrop { 
+   display: none;
+}
+.modal {
+   position: fixed;
+   top: 68px;
+   left: 360px;
+   z-index: 1055; 
+   width: 70%;
+   height: 100%;
+   overflow-x: hidden;
+   overflow-y: auto;
+   outline: 0;
+}
+.modal-dialog{
+   margin-top: 95px;
+   margin-left: 784px;
+} 
+.modal-content {
+   position: fixed;
+   display: flex;
+   flex-direction: column;
+   width: 51% !important;
+   pointer-events: auto;
+   background-color: #fff;
+   background-clip: padding-box;
+   border: 1pxsolidrgba(0,0,0,.2);
+   border-radius: 0.3rem;
+   outline: 0;
+   height: 80vh;
+   overflow-y: scroll;
+   left: 130% !important;
+   top: 58% !important;
+}
