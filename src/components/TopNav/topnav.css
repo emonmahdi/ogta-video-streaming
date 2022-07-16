@@ -76,7 +76,10 @@
 } 
 /* BsThreeDotsVertical    TbGridDots  */
 
- 
+.userProfileDropdown{
+   margin-left: 50px;
+   color:#fff;
+}
 /* ================ */
 .modal-dialog { 
    width: 260px;

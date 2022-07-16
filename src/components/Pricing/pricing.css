@@ -17,32 +17,22 @@
     color:rgb(32, 97, 238)
 } 
 .single-pricing{
-    text-align: center;
-    /* background-color: #B435FA;  */
+    text-align: center;  
     color:#000;
     border-radius: 5px;
     border: 2px solid purple;
     box-shadow: 0 3px 14px #eee; 
 }
-.single-content-pricing{ 
-    /* background-color: #fff; */
-    border-radius: 65px;
-    /* padding: 30px 15px;  */
+.card-header{
+    padding:30px 0 !important;
+}
+.single-content-pricing{  
+    border-radius: 65px; 
 }
 .price-desc{
     margin-top: 20px;
     text-align: justify;
-}
-/* .single-content-pricing:hover{
-    background-color: #B435FA; 
-    transition: .2s ;
-    cursor: pointer;
-}
-.single-pricing:hover {
-    background-color: #fff;
-    color:#000;
-    transition: .2s;
-} */
+} 
 .btn-pricing{
     background-color: #000;
     border: none;

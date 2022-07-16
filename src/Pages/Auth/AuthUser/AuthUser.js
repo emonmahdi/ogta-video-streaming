@@ -10,7 +10,7 @@ export const AuthUser = () => {
 
     const logout = () => {
         localStorage.clear();  
-        navigate("/login");
+        navigate("/");
         window.location.reload();
     }
 

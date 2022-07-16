@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { Container, Nav, Navbar, Button, Modal } from "react-bootstrap";
+import { Container, Nav, Navbar, Button, Modal, NavDropdown } from "react-bootstrap";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import * as FaIcons from "react-icons/fa";
-import { MdVideocam } from "react-icons/md";
+import * as BiIcons from "react-icons/bi";
+import * as MdIcons from "react-icons/md"; 
 import { TbGridDots } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import logoImg from '../../Assets/img/logo3.png';
@@ -17,10 +18,7 @@ const TopNav = () => {
   const {user, token, logout} = AuthUser();
   // console.log(user)
 
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  
  
 
   return (
@@ -59,56 +57,44 @@ const TopNav = () => {
             <Nav className="">
               <Nav.Link  href="#">
                 <div className="createVideo icons">
-                  {/* <span>
+                  <span>
                     {" "}
-                    <MdVideocam /> Create{" "} 
-                  </span> */}
-                  {/* <span>
-                    
-                     <BiMessageDots />
+                    <MdIcons.MdVideocam /> Create{" "} 
+                  </span>
+                  <span> 
+                     <BiIcons.BiMessageDots />
                   </span>
                   <span>
                    
-                     <MdNotifications />
-                  </span> */}
+                     <MdIcons.MdNotifications />
+                  </span>
                 </div>
-              </Nav.Link>  
- 
-              <Link to='/pricing' style={{textDecoration:'none',color:'#fff',marginTop:'8px', marginLeft:"20px", fontWeight:"bold"}}>Pricing</Link>
-              {
-                !user?.email ?
-                <Link to='/login' style={{textDecoration:'none',color:'#fff',marginTop:'8px', marginLeft:"250px", fontWeight:"bold"}}>Login</Link>
-                : 
-                <> 
-                {/* <Nav.Link as={Link}  to="/admin-panel">  */}
-                  <div className="profile pt-2" onClick={handleShow}>
-                    { user?.user_name}<FaIcons.FaUserCircle /> <BsThreeDotsVertical  />
-                  </div> 
-                {/* </Nav.Link> */}
-                
-                </>
-              }    
-                {/*modal  */} 
+              </Nav.Link> 
+                  {
+                    user?.email ? (
 
-            <Modal
-              show={show}
-              onHide={handleClose}
-              backdrop="static"
-              keyboard={false}> 
-              <Modal.Header closeButton >
-                 <div className="d-flex align-items-center ">
-                    <img src={avatarImg} height='50px' width='50px' className="rounded-3 me-3" alt="" />
-                    <h5>{user?.user_name}</h5>
-                 </div>
-              </Modal.Header>
-              <Modal.Body>
-                 <li>Mode</li>
-                 <li> <Link to='/admin-panel'>Admin Panel</Link> </li>
-                 <li><Link to='/settings'>Settings</Link> </li>
-                 <hr />
-                 <li><button onClick={logout} className='btn btn-text'>logout</button></li>
-              </Modal.Body> 
-            </Modal>   
+                    <NavDropdown title={ user?.user_name} className='userProfileDropdown' id="collasible-nav-dropdown">
+                      <NavDropdown.Item href="#action/3.4">
+                        Profile
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="/pricing">
+                        Pricing
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="/admin-panel">
+                        Admin Panel
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="/settings">
+                        Settings
+                      </NavDropdown.Item>
+                      <NavDropdown.Divider />
+                      <NavDropdown.Item onClick={logout} href="#">Logout</NavDropdown.Item>
+                   </NavDropdown> 
+                      ) : (
+                        <Link to='/login' style={{textDecoration:'none',color:'#fff',marginTop:'8px', marginLeft:"120px", fontWeight:"bold"}}>Login</Link>
+                      )
+              }
+   
+              
                
             </Nav>
           </Navbar.Collapse>
