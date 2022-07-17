@@ -10,12 +10,12 @@ const Trending = () => {
   useEffect(() => {
     fetch("./fakeData.json")
       .then((res) => res.json())
-      .then((data) => setDatas(data));
+      .then((data) => setDatas(data));  
   }, []);
-
+    
   return (
     <div className="trending">
-      <h5 className="subTitle">
+      <h5 className="subTitle">     
         {" "}
         <FaIcon.FaChartLine className="subTitleIcon" /> Trending
       </h5>

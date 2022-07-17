@@ -4,6 +4,7 @@ import HomeBanner from '../../components/HomeBanner/HomeBanner'
 import LatestVideo from '../../components/LatestVideo/LatestVideo'
 import Shorts from '../../components/Shorts/Shorts'
 import Sidebar from '../../components/Sidebar/Sidebar'
+import TopCategories from '../../components/TopCategories/TopCategories'
 import TopNav from '../../components/TopNav/TopNav'
 import TopVideos from '../../components/TopVideos/TopVideos'
 import Trending from '../../components/Trending/Trending'
@@ -20,6 +21,7 @@ const Home = () => {
         <div className="sidebarAndContent"> 
           {/* <Sidebar />  */}
           <div className='contentContainer'>
+            <TopCategories />
             <HomeBanner />
              <Trending />
              <Shorts />

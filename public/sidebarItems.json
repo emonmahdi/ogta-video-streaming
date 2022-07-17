@@ -1,0 +1,96 @@
+[
+    {
+        "title": "General",
+        "id": 1,
+        "icon": "bi-gear-fill",
+        "childrens": [
+            {
+                "title": "Home",
+                "icon": "bi-house-fill",
+                "path": "/"
+            },
+            {
+                "title": "About",
+                "icon": "bi-info-circle-fill",
+                "path": "/about"
+            },
+            {
+                "title": "Contact",
+                "icon": "bi-phone-fill"
+            },
+            {
+                "title": "FAQ",
+                "icon": "bi-question-circle-fill"
+            }
+        ]
+    },
+    {
+        "title": "Account",
+        "id": 2,
+        "icon": "bi-info-circle-fill",
+        "childrens": [
+            {
+                "title": "Login",
+                "path": "/login"
+            },
+            {
+                "title": "Register",
+                "path": "/register"
+            },
+            {
+                "title": "Forgot Password",
+                "path": "/forgot-password"
+            },
+            {
+                "title": "Reset Password",
+                "path": "/reset-password"
+            }
+        ]
+    },
+    {
+        "title": "Profile",
+        "id": 3,
+        "icon": "bi-person-fill",
+        "childrens": [
+            {
+                "title": "Profile",
+                "path": "/profile"
+            },
+            {
+                "title": "Settings"
+                
+            },
+            {
+                "title": "Logout",
+                "path": "/logout"
+            }
+        ]
+    },
+    {
+        "title": "Advance",
+        "id": 4,
+        "icon": "bi-view-list",
+        "childrens": [
+            {
+                "title": "Search",
+                "path": "/search"
+            },
+            {
+                "title": "History",
+                "path": "/history"   
+            }
+        ]
+    },
+    {
+        "title": "Support",
+        "id": 5,
+        "icon": "bi-question-circle-fill",
+        "path": "/support"
+    },
+    {
+        "title": "Report Bug",
+        "id": 6,
+        "icon": "bi-bug",
+        "path": "/report-bug"
+    }
+]

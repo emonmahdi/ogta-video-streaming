@@ -9,6 +9,7 @@ import TopNav from './components/TopNav/TopNav';
 import TopVideosRoute from './components/TopVideos/TopVideosRoute';
 import TrendingRoute from './components/Trending/TrendingRoute';
 import Admin from './Pages/Admin/Admin';
+import AdminSidebarItems from './Pages/AdminSidebar/AdminSidebarItems';
 import AuthProvider from './Pages/Auth/AuthProvider.js/AuthProvider';
 import Login from './Pages/Auth/Login/Login';
 import Register from './Pages/Auth/Register/Register';
@@ -41,6 +42,7 @@ function App() {
           <Route path='form' element={<Sample />} /> 
           <Route path='settings' element={<Settings />} />  
           <Route path='pricing' element={<Pricing />} />  
+          <Route path='items' element={<AdminSidebarItems />} />  
         </Routes>
       </BrowserRouter> 
     </div>

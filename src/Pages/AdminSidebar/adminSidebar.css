@@ -67,27 +67,45 @@
 
 .sidebar-title{
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.sidebar-title span i{
+  display: inline-block;
+  width: 1.5rem;
 }
 .adminSidebar ul li{
   background-color: #720ABF;
 }
-.sidebar-item.open .sidebar-title .dropdownIcon{
+.sidebar-item.open > .sidebar-title .dropdownIcon{
   transform: rotate(180deg);
 }
-.dropdownIcon{
-  margin-left: 95px;
+.sidebar-title .dropdownIcon{ 
   font-size: 25px;
   transition: transform .3s;
 } 
 .sidebar-content {
   height: 0;
   overflow: hidden; 
+  transition: transform .3s;
 }
 .sidebar-content span{
   display: block;
   padding: 5px 30px;
 }
-.sidebar-item.open .sidebar-content{
-  height: auto;
-  transition: height .5s;
+.sidebar-item.open > .sidebar-content{
+  height: auto; 
+}
+
+.withoutDropdownItem{
+  display: block;
+  text-decoration: none;
+  color:#fff;
+}
+.withoutDropdownItem span i{
+  display: inline-block;
+  width: 1.5rem;
+}
+.withoutDropdownItem li{
+  background-color: #000;
 }
