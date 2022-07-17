@@ -77,7 +77,18 @@
 /* BsThreeDotsVertical    TbGridDots  */
 
 .userProfileDropdown{
-   margin-left: 50px;
+   margin-left: 30px;
+   margin-top: 10px;
+   color:#fff;
+}
+.notificationIcon{
+   margin-top: 5px; 
+   cursor: pointer;
+}
+.notificationIcon span{
+   display: inline-block;
+   margin: 10px;
+   font-size: 20px;
    color:#fff;
 }
 /* ================ */

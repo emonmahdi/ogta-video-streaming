@@ -26,7 +26,7 @@ const Trending = () => {
                     const {id, title, img, author, views, hour} = data; 
                     return(
                         <div key={id} className="col-lg-3">
-                            <div className="singleItem">
+                            <div className="singleItems">
                                 <img src={img} className="img-fluid card-img-top" alt="" />
                                 <div className="single-content p-3">
                                     <h4>{title}</h4>

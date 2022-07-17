@@ -66,7 +66,7 @@ const Shorts = () => {
                 const { id, title, img, author, views, hour } = data; 
                 return (
                   <div key={id} className="col-lg-3">
-                    <div className="singleItem">
+                    <div className="singleItems">
                       <img
                         src={img}
                         className="img-fluid card-img-top"

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { MdOutlineArticle } from "react-icons/md";
+import { IoIosArrowForward } from "react-icons/io";
 
 import "./articles.css";
 
@@ -31,7 +32,7 @@ const Articles = () => {
                       <h4>{title}</h4>
                       <p>{desc}</p>
                       <div className="postBy d-flex align-items-center">
-                        <div className="d-flex align-items-center">
+                        <div className="d-flex align-items-center justify-content-around">
                           <img
                             src={authorImg}
                             className="authImg me-2"
@@ -40,7 +41,7 @@ const Articles = () => {
                           <span>28 June 2022</span>
                         </div>
                         <div>
-                          <button className="articleBtn">Read More</button>
+                          <button className="articleBtn">Read More <IoIosArrowForward /> </button>
                         </div>
                       </div>
                     </div>

@@ -22,9 +22,15 @@
     padding: 10px;
     margin-right: 10px;
 }
-.singleItem{
+.singleItems{
      overflow: hidden; 
 }
+.singleItems img{
+    width: 100%;
+    height: 170px;
+}
+
+
 .slick-slide > div {
     margin: 0 10px;
 }

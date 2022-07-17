@@ -5,6 +5,8 @@ import * as FaIcons from "react-icons/fa";
 import * as BiIcons from "react-icons/bi";
 import * as MdIcons from "react-icons/md"; 
 import { TbGridDots } from "react-icons/tb";
+import { IoCloudUploadOutline } from "react-icons/io5";
+import { BiImport } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import logoImg from '../../Assets/img/logo3.png';
 
@@ -55,21 +57,44 @@ const TopNav = () => {
               </div>
             </Nav>
             <Nav className="">
-              <Nav.Link  href="#">
+              <Nav.Link>
+              {/* <span> 
+                    <MdIcons.MdVideocam /> 
+              </span> */}
+              <NavDropdown title="Create"  className='' id="collasible-nav-dropdown">
+                      <NavDropdown.Item href="#action/3.4">
+                       <IoCloudUploadOutline /> Upload
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="/pricing">
+                       <BiImport /> Import 
+                      </NavDropdown.Item> 
+                      <NavDropdown.Item as={Link} to="/pricing">
+                      <MdIcons.MdWifiTethering /> Live
+                      </NavDropdown.Item>  
+                      <NavDropdown.Divider />
+                      <NavDropdown.Item href="#">Shorts</NavDropdown.Item>
+                   </NavDropdown> 
                 <div className="createVideo icons">
-                  <span>
+                  {/* <span>
                     {" "}
                     <MdIcons.MdVideocam /> Create{" "} 
-                  </span>
-                  <span> 
+                  </span> */}
+                  {/* <span> 
                      <BiIcons.BiMessageDots />
                   </span>
-                  <span>
-                   
+                  <span> 
                      <MdIcons.MdNotifications />
-                  </span>
+                  </span> */}
                 </div>
               </Nav.Link> 
+                  <span className="notificationIcon">
+                    <span> 
+                      <BiIcons.BiMessageDots />
+                    </span>
+                    <span> 
+                      <MdIcons.MdNotifications />
+                    </span>
+                  </span>
                   {
                     user?.email ? (
 
@@ -90,7 +115,7 @@ const TopNav = () => {
                       <NavDropdown.Item onClick={logout} href="#">Logout</NavDropdown.Item>
                    </NavDropdown> 
                       ) : (
-                        <Link to='/login' style={{textDecoration:'none',color:'#fff',marginTop:'8px', marginLeft:"120px", fontWeight:"bold"}}>Login</Link>
+                        <Link to='/login' style={{textDecoration:'none',color:'#fff',marginTop:'12px', marginLeft:"150px", fontWeight:"bold"}}>Login</Link>
                       )
               }
    

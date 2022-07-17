@@ -73,11 +73,24 @@ const Sidebar = () => {
                     <span>Shorts</span>
                 </li> 
                 <hr />
-                <p>Explore More</p>
+                <p className='ms-4'>Explore More</p>
                 <li>
                     <span>Help</span>
                 </li>
                 <hr />
+                <p className='ms-4 termsAndCons'>
+                    <span>· Refund Policy</span>
+                    <span>· FAQs</span>
+                    <span>· Terms of use</span>
+                    <span>· Privacy Policy</span>
+                    <span>· About us</span>
+                    <span>· Contact us</span> 
+                    <span>· Language</span>
+                </p>
+                <hr />
+                <p className='ms-4 copyRightText'>
+                    <span>Copyright © 2022 OGTA. All rights reserved.</span> 
+                </p>
             </ul>
         </div>
     );

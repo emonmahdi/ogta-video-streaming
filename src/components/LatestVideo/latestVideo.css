@@ -24,9 +24,13 @@
     padding: 10px;
     margin-right: 10px;
 }
-.latestVideoRoute .singleItem{
+.latestVideoRoute .singleItems{
      overflow: hidden; 
      color:#fff;
+}
+.singleItems img{
+    width: 100%;
+    height: 170px;
 }
 .latestVideoRoute{
     width: calc(100% - 250px);
