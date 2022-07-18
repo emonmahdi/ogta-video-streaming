@@ -15,7 +15,7 @@ const HomeBanner = () => {
     return (
         <div className='homeBanner'>
             <div className="container">
-                <div className="row d-flex align-items-center justify-content-between">
+                <div className="row ">
                     <div className="col-lg-6">
                         <div className="hero-text">
                             <div className="fetured-video">

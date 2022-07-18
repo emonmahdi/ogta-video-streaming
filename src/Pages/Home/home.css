@@ -1,6 +1,7 @@
 .home{
     /* background-color: #191C1D;  */
-     
+     width: 100%;
+     overflow: hidden;
 }
  
 .sidebarAndContent{ 

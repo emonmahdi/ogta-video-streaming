@@ -3,7 +3,8 @@ import { Container, Nav, Navbar, Button, Modal, NavDropdown } from "react-bootst
 import { BsThreeDotsVertical } from "react-icons/bs";
 import * as FaIcons from "react-icons/fa";
 import * as BiIcons from "react-icons/bi";
-import * as MdIcons from "react-icons/md"; 
+import * as MdIcons from "react-icons/md";   
+import * as BsIcons from "react-icons/bs";   
 import { TbGridDots } from "react-icons/tb";
 import { IoCloudUploadOutline } from "react-icons/io5";
 import { BiImport } from "react-icons/bi";
@@ -115,7 +116,19 @@ const TopNav = () => {
                       <NavDropdown.Item onClick={logout} href="#">Logout</NavDropdown.Item>
                    </NavDropdown> 
                       ) : (
-                        <Link to='/login' style={{textDecoration:'none',color:'#fff',marginTop:'12px', marginLeft:"150px", fontWeight:"bold"}}>Login</Link>
+                        // <Link to='/login' style={{textDecoration:'none',color:'#fff',marginTop:'12px', marginLeft:"150px", fontWeight:"bold"}}>Login</Link>
+                        <NavDropdown title="My Accounts" className='userProfileDropdown' id="collasible-nav-dropdown">
+                      <NavDropdown.Item href="#action/3.4">
+                       <BsIcons.BsLightbulb className="me-2" /> Mode
+                      </NavDropdown.Item>
+                      <NavDropdown.Divider /> 
+                      <NavDropdown.Item as={Link} to="/login">
+                       <BiIcons.BiLogIn className="me-2"  /> Login
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="/register">
+                        <FaIcons.FaUserPlus className="me-2" />Register
+                      </NavDropdown.Item> 
+                   </NavDropdown> 
                       )
               }
    
