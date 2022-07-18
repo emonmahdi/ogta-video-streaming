@@ -72,7 +72,7 @@ const Shorts = () => {
                         className="img-fluid card-img-top"
                         alt=""
                       />
-                      <div className="single-content p-3">
+                      <div className="single-content">
                         <h4>{title}</h4>
                         <span>{author}</span>
                         <p>

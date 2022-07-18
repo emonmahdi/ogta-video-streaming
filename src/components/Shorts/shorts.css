@@ -29,8 +29,24 @@
     width: 100%;
     height: 170px;
 }
+.shorts .single-content h4{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 16px;
+    margin-bottom: 5px;
+}
+.shorts .single-content span{
+    font-size: 13px;
+    color:#777;
+}
+.shorts .single-content p{
+    font-size: 13px;
+    color:#777;
+}
 
 
+/* =================== */
 .slick-slide > div {
     margin: 0 10px;
 }

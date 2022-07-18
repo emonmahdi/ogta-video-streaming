@@ -1,11 +1,11 @@
 [
     {
         "id": 1,
-        "title": "this is title one",
+        "title": "The World in HDR in 4K (ULTRA HD)",
         "img":"https://i.ibb.co/gZLXmFh/blog-1.jpg",
-        "author": "Dan Summy",
-        "views": "1000",
-        "hour": "10 hour"
+        "author": "Deen Doughouz",
+        "views": "1000" ,
+        "hour": "10 days"
     },
     {
         "id": 2,
